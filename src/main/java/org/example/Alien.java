@@ -5,23 +5,17 @@ import java.beans.ConstructorProperties;
 public class Alien {
 
     private int age;
-    private Laptop laptop;
-    private int salary;
+    private Computer computer;
 
     public Alien() {
         System.out.println("Alien Object Created");
     }
 
-//    public Alien(int age) {
-//        System.out.println("Parameterized Constructor Called");
+//    @ConstructorProperties({"age", "laptop"})
+//    public Alien(int age, Computer computer) {
 //        this.age = age;
+//        this.computer = computer;
 //    }
-
-    @ConstructorProperties({"age", "laptop"})
-    public Alien(int age, Laptop laptop) {
-        this.age = age;
-        this.laptop = laptop;
-    }
 
     public int getAge() {
         return age;
@@ -32,16 +26,16 @@ public class Alien {
         this.age = age;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getComputer() {
+        return computer;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
 
     public void code() {
         System.out.println("Alien");
-        laptop.compile();
+        computer.compile();
     }
 }

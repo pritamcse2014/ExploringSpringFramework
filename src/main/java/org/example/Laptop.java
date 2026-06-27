@@ -1,11 +1,12 @@
 package org.example;
 
-public class Laptop {
+public class Laptop implements Computer {
     public Laptop() {
         System.out.println("Laptop Object Created");
     }
 
+    @Override
     public void compile() {
-        System.out.println("Compile Method Called");
+        System.out.println("Compile Method Called Laptop");
     }
 }
