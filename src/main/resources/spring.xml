@@ -4,22 +4,35 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions here -->
-    <bean id="alien" class="org.example.Alien">
+<!--    <bean id="alien" class="org.example.Alien" autowire="byName">-->
+    <bean id="alien" class="org.example.Alien" autowire="byType">
 <!--        <constructor-arg type="org.example.Laptop" ref="laptop" />-->
 <!--        <constructor-arg type="int" value="21" />-->
 
 <!--        <constructor-arg index="1" ref="laptop" />-->
 <!--        <constructor-arg index="0" value="21" />-->
 
-        <constructor-arg name="laptop" ref="laptop" />
-        <constructor-arg name="age" value="21" />
+<!--        <constructor-arg name="laptop" ref="laptop" />-->
+<!--        <constructor-arg name="age" value="21" />-->
+
+        <property name="age" value="21" />
+<!--        <property name="computer" ref="laptop" />-->
+<!--        <property name="computer" ref="computer" />-->
     </bean>
 
-    <bean id="laptop" class="org.example.Laptop">
+<!--    <bean id="laptop" class="org.example.Laptop">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="laptop2" class="org.example.Laptop">-->
+
+<!--    </bean>-->
+
+    <bean id="computer" class="org.example.Laptop">
 
     </bean>
 
-<!--    <bean class="org.example.Laptop">-->
+<!--    <bean id="computer2" class="org.example.Desktop">-->
 
 <!--    </bean>-->
 
