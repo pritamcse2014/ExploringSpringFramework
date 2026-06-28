@@ -32,7 +32,7 @@
 
     </bean>
 
-    <bean id="computer2" class="org.example.Desktop">
+    <bean id="computer2" class="org.example.Desktop" lazy-init="true">
 
     </bean>
 
