@@ -17,7 +17,7 @@
 
         <property name="age" value="21" />
 <!--        <property name="computer" ref="laptop" />-->
-        <property name="computer" ref="computer2" />
+        <property name="computer" ref="computer" />
     </bean>
 
 <!--    <bean id="laptop" class="org.example.Laptop">-->
@@ -32,7 +32,7 @@
 
     </bean>
 
-    <bean id="computer2" class="org.example.Desktop" lazy-init="true">
+    <bean class="org.example.Desktop" lazy-init="true">
 
     </bean>
 
