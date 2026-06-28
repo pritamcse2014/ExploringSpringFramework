@@ -17,7 +17,11 @@
 
         <property name="age" value="21" />
 <!--        <property name="computer" ref="laptop" />-->
-        <property name="computer" ref="computer" />
+        <property name="computer">
+            <bean id="computer" class="org.example.Laptop" primary="true">
+
+            </bean>
+        </property>
     </bean>
 
 <!--    <bean id="laptop" class="org.example.Laptop">-->
@@ -28,12 +32,12 @@
 
 <!--    </bean>-->
 
-    <bean id="computer" class="org.example.Laptop" primary="true">
+<!--    <bean id="computer" class="org.example.Laptop" primary="true">-->
 
-    </bean>
+<!--    </bean>-->
 
-    <bean class="org.example.Desktop" lazy-init="true">
+<!--    <bean class="org.example.Desktop" lazy-init="true">-->
 
-    </bean>
+<!--    </bean>-->
 
 </beans>

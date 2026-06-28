@@ -17,7 +17,7 @@ public class App
         alien1.code();
 
 //        Desktop desktop = context.getBean("computer2", Desktop.class);
-        Desktop desktop = context.getBean(Desktop.class);
-        Computer computer = context.getBean(Computer.class);
+//        Desktop desktop = context.getBean(Desktop.class);
+//        Computer computer = context.getBean(Computer.class);
     }
 }
